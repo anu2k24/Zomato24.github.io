@@ -143,6 +143,15 @@ nav .nav_item ul{
     color: #8b8a8a;
     margin-left: 12px;
 }
+.menu-icon{
+    color:white;
+    font-size: 30px;
+    display: none;
+    }
+    
+.option .image:hover{
+    transform:scale(1.1);
+}
 
 /* collection section css............*/
 
@@ -344,8 +353,6 @@ nav .nav_item ul{
    } button i{
     align-self:flex-end;
    }
-  
-  
 
    /*.....footer link section....*/
    .footer{
@@ -408,3 +415,49 @@ nav .nav_item ul{
        margin-top:20px;
        
     }
+
+    /*..........media query for small screen size.....*/
+@media only screen and (max-width:768px){
+    .menu-icon{
+        display: block;
+
+    }
+    nav .app_link a, nav .nav_item ul{
+        display:none;
+
+    }
+    .content_wrapper h1{
+        font-size:1.5rem;
+    } .content_wrapper img{
+        width:250px;
+    }.collection-card .image{
+      width:100%;
+      margin:20px;
+
+   } .popular-locality .box{
+    width: 100%;
+   }
+   .app{
+    flex-direction: column;
+
+   } .app .app-image .app .gets-app{
+    width:100%;
+   } .app .submit input,.submit_button{
+     width:100%;
+   margin-left: 0;
+   margin-bottom: 10px;
+   }.app-store{
+    flex-direction: column;
+    width:100%;
+    margin-top: 20px;
+   } .app-store img{
+    width:100px;
+   }
+   .left_search input {
+    color: transparent;
+    background-color: transparent; 
+}.right_search input {
+    color: transparent;
+    background-color: transparent; 
+}
+}
